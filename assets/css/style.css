@@ -1,0 +1,131 @@
+/* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
+## Basic Setup
+\* *** *** *** *** *** *** *** *** *** *** *** *** *** */
+
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+/* variables */
+:root {
+  --main-font: "Poppins", sans-serif;
+  --primary-color: #2d25a0;
+  --secondary-color: #e02c6d;
+  --main-black-color: #222222;
+  --main-white-color: #fafaff;
+  --gray-color: #ccc;
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--main-white-color);
+  font-size: 1.6rem;
+  font-family: var(--main-font);
+  color: var(--main-black-color);
+}
+
+/* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
+## global styles
+\* *** *** *** *** *** *** *** *** *** *** *** *** *** */
+
+h1 {
+  font-size: 6.4rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+.container {
+  width: 116rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.btn {
+  text-transform: capitalize;
+  background: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: var(--main-white-color);
+  padding: 1rem 2rem;
+  border-radius: 25rem;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: var(--primary-color);
+}
+
+.section-title {
+  color: var(--primary-color);
+  display: inline-block;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.5rem;
+  width: 100%;
+  background: var(--gray-color);
+  border-radius: 50%;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
