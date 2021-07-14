@@ -52,6 +52,10 @@
     width: 100%;
   }
 
+  header .hero .content {
+    margin-top: 10rem;
+  }
+
   header .hero .image-container {
     height: 50vh;
   }
