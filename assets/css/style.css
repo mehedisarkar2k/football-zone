@@ -111,8 +111,17 @@ section {
   transition: 0.2s;
 }
 
+.btn i {
+  transition: 0.2s;
+}
+
 .btn:hover {
   background: var(--primary-color);
+  padding-right: 2.5rem;
+}
+
+.btn:hover i {
+  transform: translateX(1rem);
 }
 
 .link {
