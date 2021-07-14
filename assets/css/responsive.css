@@ -10,6 +10,11 @@
     margin-left: 1rem;
   }
 
+  header .hero .content h1 {
+    font-size: 5.4rem;
+    line-height: 6rem;
+  }
+
   .player-section .all-player {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -35,6 +40,28 @@
 
   header nav .nav-links {
     display: none;
+  }
+
+  header .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  header .hero .content,
+  header .hero .image-container {
+    width: 100%;
+  }
+
+  header .hero .image-container {
+    height: 50vh;
+  }
+  header .hero .image-container img {
+    width: 80%;
+    height: auto;
+  }
+
+  header .hero .image-container:hover .ball {
+    transform: translate(-50%, -200%) rotate(360deg) scale(0.7);
   }
 
   .player-section .all-player {
