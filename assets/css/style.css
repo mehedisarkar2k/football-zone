@@ -385,6 +385,50 @@ header .hero .image-container:hover .ball {
 }
 
 /* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
+## ranking section
+\* *** *** *** *** *** *** *** *** *** *** *** *** *** */
+.rankings .info {
+  width: 80%;
+  margin: 2rem auto 4rem;
+  text-align: center;
+}
+
+.rankings .info h3 {
+  margin-bottom: 2rem;
+}
+.rankings .info p {
+  font-size: 1.8rem;
+  color: var(--gray-color);
+}
+
+.rankings .team-ranking {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10rem;
+}
+
+.rankings .team-ranking .data {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  color: var(--main-black-color);
+  font-size: 2rem;
+  font-size: 700;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.rankings .team-ranking .data.title {
+  font-size: 1.6rem;
+  color: var(--gray-color);
+}
+
+.rankings .team-ranking .data:hover {
+  background: var(--light-gray);
+  cursor: wait;
+}
+
+/* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
 ## Footer section
 \* *** *** *** *** *** *** *** *** *** *** *** *** *** */
 footer {
