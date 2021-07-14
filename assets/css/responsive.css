@@ -6,6 +6,10 @@
 }
 
 @media only screen and (max-width: 991px) {
+  header nav .nav-links li {
+    margin-left: 1rem;
+  }
+
   .player-section .all-player {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -24,6 +28,15 @@
     width: 75%;
     margin: 5rem auto;
   }
+
+  header nav #hamburger {
+    display: block;
+  }
+
+  header nav .nav-links {
+    display: none;
+  }
+
   .player-section .all-player {
     grid-template-columns: repeat(1, 1fr);
   }

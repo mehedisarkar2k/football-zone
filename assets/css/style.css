@@ -65,6 +65,7 @@ p {
 }
 
 a {
+  display: inline-block;
   text-transform: capitalize;
   text-decoration: none;
 }
@@ -153,8 +154,77 @@ section {
 }
 
 /* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
+## Header Section
+\* *** *** *** *** *** *** *** *** *** *** *** *** *** */
+header {
+  min-height: 100vh;
+  width: 100%;
+  background: url(./bg/Sprinkle.svg) center/cover no-repeat;
+  position: relative;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #073978;
+  z-index: 99;
+}
+
+header nav .container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+header nav #hamburger {
+  display: none;
+}
+
+header nav #hamburger .fas {
+  font-size: 3rem;
+  padding: 1rem;
+  color: var(--main-white-color);
+  position: relative;
+  left: 2rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+header nav #hamburger:hover .fas {
+  color: var(--secondary-color);
+}
+
+header nav .nav-links {
+  display: flex;
+}
+header nav .nav-links li {
+  list-style: none;
+  margin-left: 1.8rem;
+}
+
+header nav .nav-links li a {
+  color: var(--main-white-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem 1rem;
+  transition: 0.25s;
+}
+
+header nav .nav-links li:hover a {
+  color: var(--secondary-color);
+}
+
+/* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
 ## player section
 \* *** *** *** *** *** *** *** *** *** *** *** *** *** */
+.player-section {
+  margin-top: 0;
+}
 .player-section .all-player {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
