@@ -1,7 +1,6 @@
 @media only screen and (max-width: 1199px) {
   .container {
     width: 100%;
-    padding: 2rem;
     border-radius: 0;
   }
 }
@@ -10,6 +9,11 @@
   .player-section .all-player {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .highlight-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -17,10 +21,15 @@
     font-size: 55%;
   }
   .container {
-    width: 70%;
+    width: 75%;
+    margin: 5rem auto;
   }
   .player-section .all-player {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .highlight-section.container {
+    width: 100%;
   }
 }
 
@@ -31,5 +40,9 @@
   .container {
     width: 100%;
     padding: 3rem;
+  }
+
+  .highlight-section .content .sub-title {
+    font-size: 2.8rem;
   }
 }

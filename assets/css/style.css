@@ -13,6 +13,7 @@
   --main-black-color: #222222;
   --main-white-color: #fafaff;
   --gray-color: #777;
+  --light-gray: #d3d3d3;
 }
 
 /* css reset */
@@ -40,26 +41,22 @@ body {
 
 h1 {
   font-size: 6.4rem;
-  margin-bottom: 2rem;
 }
 
 h2 {
   font-size: 4.8rem;
-  margin-bottom: 1.5rem;
 }
 
 h3 {
   font-size: 3.6rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
 }
 
 h4 {
   font-size: 2.8rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
 }
 
 p {
@@ -72,8 +69,13 @@ a {
   text-decoration: none;
 }
 
-img {
+strong {
   display: inline-block;
+  margin-top: 1rem;
+}
+
+img {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -85,8 +87,12 @@ section {
 
 .container {
   width: 116rem;
-  margin: 0 auto;
-  padding: 1rem;
+  padding: 3rem 1rem;
+  margin: 8rem auto;
+}
+
+.section-bg-gray {
+  background: rgb(241, 241, 241);
 }
 
 .btn {
@@ -100,7 +106,6 @@ section {
   outline: none;
   color: var(--main-white-color);
   padding: 1rem 2rem;
-  border-radius: 25rem;
   transition: 0.2s;
 }
 
@@ -124,7 +129,7 @@ section {
   display: inline-block;
   font-size: 2.8rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   letter-spacing: 0.3rem;
   position: relative;
 }
@@ -136,7 +141,7 @@ section {
   bottom: 0;
   height: 0.5rem;
   width: 100%;
-  background: var(--gray-color);
+  background: var(--light-gray);
   border-radius: 50%;
 }
 
@@ -179,4 +184,77 @@ section {
 }
 .player-section .all-player .player-info p {
   color: var(--gray-color);
+}
+
+/* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
+## highlight section
+\* *** *** *** *** *** *** *** *** *** *** *** *** *** */
+.highlight-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding: 5rem 4rem;
+}
+
+.highlight-section .content,
+.highlight-section .image-container {
+  width: 90%;
+  margin: auto;
+}
+
+.highlight-section .content .sub-title {
+  margin-bottom: 1rem;
+}
+
+.highlight-section .content .details {
+  text-align: justify;
+  color: var(--gray-color);
+  margin-bottom: 3rem;
+}
+
+.highlight-section .image-container {
+  overflow: hidden;
+  border-radius: 2.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.highlight-section .image-container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.25);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.15s linear 0.15s;
+}
+
+.highlight-section .image-container:hover .btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+  z-index: 9;
+}
+
+.highlight-section .image-container img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.01);
+  transition: all 0.2s linear;
+}
+
+.highlight-section .image-container:hover img {
+  transform: scale(1.35);
+}
+
+.highlight-section .image-container:hover::after {
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(224, 44, 110, 0.35);
+  display: block;
+  z-index: 1;
 }
