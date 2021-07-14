@@ -70,8 +70,14 @@
     height: auto;
   }
 
+  header .hero .image-container .ball {
+    top: 40%;
+    left: 3%;
+    transform: scale(0.7);
+  }
+
   header .hero .image-container:hover .ball {
-    transform: translate(-50%, -200%) rotate(360deg) scale(0.7);
+    transform: translate(-50%, -280%) rotate(360deg) scale(0.5);
   }
 
   .player-section .all-player {
