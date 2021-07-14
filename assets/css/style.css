@@ -436,11 +436,11 @@ header .hero .image-container:hover .ball {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 3rem;
-  padding: 8rem 4rem;
+  padding: 5rem 4rem;
 }
 
 .newsleter video {
-  width: 100%;
+  width: 90%;
   height: 100%;
   margin: auto;
   border-radius: 2.5rem;
@@ -450,7 +450,7 @@ header .hero .image-container:hover .ball {
 }
 
 .newsleter .input-section {
-  width: 100%;
+  width: 90%;
   height: 100%;
   padding: 2rem;
   display: flex;
