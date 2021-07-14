@@ -219,6 +219,60 @@ header nav .nav-links li:hover a {
   color: var(--secondary-color);
 }
 
+/* hero section */
+header .hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .hero .content,
+header .hero .image-container {
+  width: 50%;
+  margin: 0 5rem;
+  padding: 0 5rem;
+}
+
+header .hero .content h1 {
+  color: var(--main-white-color);
+  line-height: 8rem;
+  margin-bottom: 2rem;
+}
+
+header .hero .image-container {
+  height: 100%;
+  background: url(./bg/banner-bg.svg) center/contain no-repeat;
+  position: relative;
+}
+
+header .hero .image-container .ball {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 45%;
+  left: -3%;
+  transform: scale(0.9);
+  transition: all 1s ease-out 0.05s;
+  z-index: 1;
+}
+header .hero .image-container .player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  transition: 0.3 s ease-in;
+}
+
+header .hero .image-container:hover .player {
+  transform: translate(-50%, -50%) rotate(-15deg);
+}
+header .hero .image-container:hover .ball {
+  transform: translate(-500%, -200%) rotate(360deg) scale(0.7);
+}
+
 /* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
 ## player section
 \* *** *** *** *** *** *** *** *** *** *** *** *** *** */
