@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .player-section .all-player {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 55%;
+  }
+  .container {
+    width: 70%;
+  }
+  .player-section .all-player {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+}
+
+@media only screen and (max-width: 479px) {
+  .container {
+    width: 100%;
+    padding: 3rem;
+  }
+}
