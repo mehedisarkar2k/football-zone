@@ -264,7 +264,7 @@ header .hero .image-container .player {
   left: 50%;
   transform-origin: center;
   transform: translate(-50%, -50%) rotate(-30deg);
-  transition: 0.3 s ease-in;
+  transition: 0.3s ease-in;
 }
 
 header .hero .image-container:hover .player {
@@ -412,7 +412,7 @@ header .hero .image-container:hover .ball {
   grid-template-columns: 1fr 3fr 2fr;
   color: var(--main-black-color);
   font-size: 2rem;
-  font-size: 700;
+  font-weight: 500;
   text-align: center;
   padding: 1.5rem 1rem;
   border-bottom: 1px solid var(--light-gray);
@@ -426,7 +426,7 @@ header .hero .image-container:hover .ball {
 
 .rankings .team-ranking .data:hover {
   background: var(--light-gray);
-  cursor: wait;
+  cursor: pointer;
 }
 
 /* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
