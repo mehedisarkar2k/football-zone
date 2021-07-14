@@ -33,6 +33,9 @@
     width: 75%;
     margin: 5rem auto;
   }
+  header nav .container {
+    padding: 1rem;
+  }
 
   header {
     overflow-x: hidden;
