@@ -33,6 +33,7 @@ body {
   font-size: 1.6rem;
   font-family: var(--main-font);
   color: var(--main-black-color);
+  overflow-x: hidden;
 }
 
 /* *** *** *** *** *** *** *** *** *** *** *** *** *** *\
