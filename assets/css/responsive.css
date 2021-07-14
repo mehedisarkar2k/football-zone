@@ -34,6 +34,10 @@
     margin: 5rem auto;
   }
 
+  header {
+    overflow-x: hidden;
+  }
+
   header nav #hamburger {
     display: block;
   }
