@@ -54,6 +54,8 @@
   header .hero .content,
   header .hero .image-container {
     width: 100%;
+    margin: 0;
+    padding: 0 1rem;
   }
 
   header .hero .content {
